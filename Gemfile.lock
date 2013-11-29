@@ -1,11 +1,20 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    diff-lcs (1.2.5)
     haml (4.0.4)
       tilt
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
+    rspec (2.14.1)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
+    rspec-core (2.14.7)
+    rspec-expectations (2.14.4)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.14.4)
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.4.4)
@@ -21,6 +30,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  rspec
   shotgun
   sinatra
   sinatra-support

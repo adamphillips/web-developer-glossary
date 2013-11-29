@@ -6,3 +6,7 @@ gem 'sinatra-support'
 gem 'shotgun'
 
 gem 'haml'
+
+group :test do
+  gem 'rspec'
+end
