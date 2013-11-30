@@ -13,3 +13,7 @@ serve_js '/js', from: './assets/js'
 get '/' do
   erb :index
 end
+
+get '/glossary/terms/:term' do
+  haml :term
+end
