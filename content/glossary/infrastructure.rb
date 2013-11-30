@@ -14,11 +14,6 @@ machine-friendly ip addresses.
 '
   end
 
-  term 'HTML' do
-    subtitle 'Hypertext Markup Language'
-    body 'Web pages are written using html'
-  end
-
   term 'HTTP' do
     subtitle 'The glue that binds the web'
     body '
