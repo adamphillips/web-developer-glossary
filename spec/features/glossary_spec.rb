@@ -10,7 +10,7 @@ feature 'the glossary' do
       end
 
       within 'p' do
-        page.should have_content('Hypertext Transport Protocol')
+        page.should have_content(/The glue/)
       end
     end
 
