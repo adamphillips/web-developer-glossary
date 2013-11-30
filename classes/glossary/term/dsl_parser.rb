@@ -1,10 +1,14 @@
 module Glossary
   class Term
-    class DSL
+    class DSLParser
       def initialize term, &block
         @term = term
 
         instance_exec &block
+      end
+
+      def body value
+        @term.body = value
       end
 
       def subtitle value

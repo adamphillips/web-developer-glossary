@@ -11,6 +11,10 @@ feature 'the glossary' do
     within 'h2' do
       page.should have_content('Hypertext Transport Protocol')
     end
+
+    within 'p' do
+      page.should have_content(/HTTP is/)
+    end
   end
 
   scenario '404s when the term is not defined' do
