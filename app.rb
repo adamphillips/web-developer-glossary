@@ -23,6 +23,10 @@ get '/' do
   erb :index
 end
 
+get '/glossary/terms' do
+  haml :terms
+end
+
 get '/glossary/terms/:term' do
   t = params[:term]
   if Glossary.term_defined? t

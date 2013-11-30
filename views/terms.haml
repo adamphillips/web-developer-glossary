@@ -1,0 +1,12 @@
+.jumbotron
+  .container
+    %h1 Terms
+    %p Frequently used terms in the world of the web
+
+.container
+  %ul.nav.nav-pills.nav-stacked.term-list
+    - Glossary.terms.each do |t|
+      %li.col-md-4
+        %h2
+          %a{href: "/glossary/terms/#{t[0]}"}= t[0]
+        %p= t[1].subtitle
