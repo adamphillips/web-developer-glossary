@@ -1,0 +1,1 @@
+require 'glossary/terms'
