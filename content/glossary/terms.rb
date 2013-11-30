@@ -3,7 +3,12 @@
 Glossary.define do
   term 'DNS' do
     subtitle 'Phonebooks for computers'
-    body 'Computers use IP Addresses'
+    body '
+DNS stands for Domain Name System.  When we talk about websites, we
+usually refer to them by their domain name, for example facebook.com,
+twitter.com etc. Computers connected in a network, like the internet refer to
+each other in terms of ip addresses, eg 173.252.110.27, 199.16.156.230.
+'
   end
 
   term 'HTML' do
@@ -13,7 +18,10 @@ Glossary.define do
 
   term 'HTTP' do
     subtitle 'The glue that binds the web'
-    body 'HTTP is the protocol that is used to control the flow of web sessions. It consists of two parts, the request and the response.'
+    body '
+HTTP is the protocol that is used to control the flow of web sessions. It
+consists of two parts, the request and the response.
+      '
   end
 
   term 'HTTP Request' do

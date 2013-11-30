@@ -9,7 +9,7 @@ gem 'haml'
 gem 'less'
 gem 'therubyracer'
 gem 'libv8'
-gem 'arbre'
+gem 'redcarpet'
 
 group :test do
   gem 'rspec'

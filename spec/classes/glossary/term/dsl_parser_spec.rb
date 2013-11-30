@@ -9,14 +9,12 @@ describe Glossary::Term::DSLParser do
     Glossary::Term::DSLParser.new @term do
       body 'A new term'
     end
-    @term.body.should == 'A new term'
+    @term.body.should == "<p>A new term</p>\n"
   end
 
-  it 'should be possible to define the body of the term with a block of Arbre' do
+  it 'should be possible to define the body of the term using markdown' do
     Glossary::Term::DSLParser.new @term do
-      body do
-        h1 'A term'
-      end
+      body '# A term'
     end
 
     @term.body.should == "<h1>A term</h1>\n"

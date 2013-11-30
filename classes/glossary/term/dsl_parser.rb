@@ -1,4 +1,4 @@
-require 'arbre'
+require 'redcarpet'
 
 module Glossary
   class Term
@@ -9,8 +9,13 @@ module Glossary
         instance_exec &block
       end
 
-      def body value='', &block
-        value = Arbre::Context.new(&block).to_s if block_given?
+      def body value
+        markdown = Redcarpet::Markdown.new(
+          Redcarpet::Render::HTML,
+          autolink: true,
+          space_after_headers: true
+        )
+        value = markdown.render value
         @term.body = value
       end
 
