@@ -4,9 +4,4 @@
     %p Frequently used terms in the world of the web
 
 .container
-  %ul.term-list.list-inline
-    - Glossary.terms.each do |t|
-      %li.col-md-4
-        %h2
-          %a{href: "/glossary/terms/#{t[0]}"}= t[0]
-        %p.lead= t[1].subtitle
+  = haml(:_term_list, layout: false)

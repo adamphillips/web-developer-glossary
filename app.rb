@@ -20,7 +20,7 @@ serve_css '/css', from: './assets/styles'
 serve_js '/js', from: './assets/js'
 
 get '/' do
-  erb :index
+  haml :index
 end
 
 get '/glossary/terms' do

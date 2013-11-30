@@ -1,0 +1,6 @@
+%ul.term-list.list-inline
+  - Glossary.terms.each do |t|
+    %li.col-md-4
+      %h2
+        %a{href: "/glossary/terms/#{t[0]}"}= t[0]
+      %p.lead= t[1].subtitle
