@@ -5,7 +5,7 @@ module Glossary
     def term title, &block
       term = Glossary::Term.new(title)
 
-      Glossary::Term::DSLParser.new(term, &block)
+      Glossary::Term::DSLParser.new(term, &block) if block_given?
 
       Glossary.define_term term
     end
