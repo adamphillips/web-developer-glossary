@@ -24,6 +24,11 @@ get '/' do
 end
 
 get '/glossary/terms/:term' do
-  term = Glossary.terms[params[:term]]
-  haml :term, locals: {term: term}
+  t = params[:term]
+  if Glossary.term_defined? t
+    term = Glossary.terms[t]
+    haml :term, locals: {term: term}
+  else
+    halt 404, 'Term not defined'
+  end
 end
