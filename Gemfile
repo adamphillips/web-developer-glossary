@@ -6,6 +6,9 @@ gem 'sinatra-support'
 gem 'shotgun'
 
 gem 'haml'
+gem 'less'
+gem 'therubyracer'
+gem 'libv8'
 
 group :test do
   gem 'rspec'
