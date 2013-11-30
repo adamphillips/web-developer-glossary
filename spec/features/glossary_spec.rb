@@ -3,17 +3,21 @@ require 'spec_helper'
 feature 'the glossary' do
   scenario 'viewing a term that exists' do
     visit '/glossary/terms/HTTP'
-    #binding.pry
-    within 'h1' do
-      page.should have_content('HTTP')
+
+    within '.jumbotron' do
+      within 'h1' do
+        page.should have_content('HTTP')
+      end
+
+      within 'p' do
+        page.should have_content('Hypertext Transport Protocol')
+      end
     end
 
-    within 'h2' do
-      page.should have_content('Hypertext Transport Protocol')
-    end
-
-    within 'p' do
-      page.should have_content(/HTTP is/)
+    within '.content' do
+      within 'p' do
+        page.should have_content(/HTTP is/)
+      end
     end
   end
 

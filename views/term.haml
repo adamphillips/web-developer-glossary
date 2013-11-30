@@ -1,6 +1,12 @@
 .jumbotron
   .container
     %h1= term.term
-    %h2= term.subtitle
-.container
-  %p= term.body
+    %p= term.subtitle
+.content.container
+  .col-md-8
+    %p= term.body
+  .col-md-4
+    %ul.nav.nav-pills.nav-stacked
+      - Glossary.terms.each do |t|
+        %li
+          %a{href: "/glossary/terms/#{t[0]}"}= t[0]
