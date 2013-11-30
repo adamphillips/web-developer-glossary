@@ -1,5 +1,7 @@
 require 'rack/test'
 require 'capybara/rspec'
+require 'pry'
+require 'pry-debugger'
 
 require File.expand_path '../../app.rb', __FILE__
 

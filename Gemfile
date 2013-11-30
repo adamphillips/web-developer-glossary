@@ -10,4 +10,6 @@ gem 'haml'
 group :test do
   gem 'rspec'
   gem 'capybara'
+  gem 'pry'
+  gem 'pry-debugger'
 end
