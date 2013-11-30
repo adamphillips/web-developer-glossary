@@ -15,5 +15,6 @@ get '/' do
 end
 
 get '/glossary/terms/:term' do
-  haml :term
+  term = params[:term]
+  haml :term, locals: {term: term}
 end
