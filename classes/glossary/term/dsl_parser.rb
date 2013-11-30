@@ -1,4 +1,4 @@
-require 'redcarpet'
+require 'kramdown'
 
 module Glossary
   class Term
@@ -10,12 +10,7 @@ module Glossary
       end
 
       def body value
-        markdown = Redcarpet::Markdown.new(
-          Redcarpet::Render::HTML,
-          autolink: true,
-          space_after_headers: true
-        )
-        value = markdown.render value
+        value = Kramdown::Document.new(value).to_html
         @term.body = value
       end
 

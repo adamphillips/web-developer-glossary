@@ -17,6 +17,6 @@ describe Glossary::Term::DSLParser do
       body '# A term'
     end
 
-    @term.body.should == "<h1>A term</h1>\n"
+    @term.body.should == "<h1 id=\"a-term\">A term</h1>\n"
   end
 end
