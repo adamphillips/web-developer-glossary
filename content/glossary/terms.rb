@@ -10,4 +10,19 @@ Glossary.define do
     subtitle 'How to ask nicely'
     body 'When a client want something they ask for it'
   end
+
+  term 'HTTP Response' do
+    subtitle 'Getting something back'
+    body 'The counter part to an HTTP Request'
+  end
+
+  term 'DNS' do
+    subtitle 'Phonebooks for computers'
+    body 'Computers use IP Addresses'
+  end
+
+  term 'HTML' do
+    subtitle 'Hypertext Markup Language'
+    body 'Web pages are written using html'
+  end
 end
