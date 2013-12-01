@@ -1,4 +1,18 @@
 Glossary.define do
+  term 'CSS' do
+    subtitle 'coding in the client'
+    body '
+javascript is an interpreted language.
+'
+  end
+
+  term 'Preprocessor' do
+    subtitle 'Letting the computer do the boring work'
+    body '
+javascript is an interpreted language.
+'
+  end
+
   term 'JavaScript' do
     subtitle 'Coding in the client'
     body '
