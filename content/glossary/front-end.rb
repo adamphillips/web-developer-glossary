@@ -11,7 +11,7 @@ JavaScript is an interpreted language.
     body '
 HTML is one of the fundamental building blocks of the web. It is a way of
 tagging content to include additional information that can be read by the
-client (web browser). It works by **tagging** the content to include this
+client (web browser). It works by *tagging* the content to include this
 additional data.
 
 Consider the following piece of content describing HTML.
