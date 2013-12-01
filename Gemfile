@@ -9,7 +9,9 @@ gem 'haml'
 gem 'less'
 gem 'therubyracer'
 gem 'libv8'
+
 gem 'kramdown'
+gem 'coderay'
 
 group :test do
   gem 'rspec'

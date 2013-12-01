@@ -10,7 +10,11 @@ module Glossary
       end
 
       def body value
-        value = Kramdown::Document.new(value).to_html
+        value = Kramdown::Document.new(value,
+          enable_coderay: true,
+          coderay_line_numbers: nil,
+          coderay_wrap: :div,
+        ).to_html
         @term.body = value
       end
 
