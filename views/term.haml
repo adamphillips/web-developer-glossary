@@ -1,14 +1,16 @@
 .jumbotron
-  .container
-    %h1= term.term
-    %p= term.subtitle
+  .container.row
+    .col-md-10
+      %h1= term.term
+      %p= term.subtitle
+    .col-md-2
+      %a.wikipedia.btn.btn-info{href: term.wikipedia_url} Wikipedia
 .content.container
-  .col-md-9
-    = term.body
-  .col-md-3
-    %p.related
-      %a.btn.btn-info{href: term.wikipedia_url}= term.wikipedia_label
-    %ul.nav.nav-pills.nav-stacked
-      - Glossary.terms.each do |t|
-        %li
-          %a{href: "/glossary/terms/#{t[0]}"}= t[0]
+  .row
+    .col-md-9
+      = term.body
+    .col-md-3
+      %ul.nav.nav-pills.nav-stacked
+        - Glossary.terms.each do |t|
+          %li
+            %a{href: "/glossary/terms/#{t[0]}"}= t[0]

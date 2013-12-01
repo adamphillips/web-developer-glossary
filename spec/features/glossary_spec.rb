@@ -28,7 +28,7 @@ feature 'the glossary' do
     end
 
     within 'a[href="http://en.wikipedia.org/wiki/HTTP"]' do
-      page.should have_content('HTTP on Wikipedia')
+      page.should have_content('Wikipedia')
     end
   end
 
