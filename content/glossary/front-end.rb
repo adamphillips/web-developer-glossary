@@ -7,7 +7,7 @@ JavaScript is an interpreted language.
   end
 
   term 'HTML' do
-    subtitle ''
+    subtitle 'Hypertext Markup Language'
     body '
 HTML is one of the fundamental building blocks of the web. It is a way of
 tagging content to include additional information that can be read by the
