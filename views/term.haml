@@ -7,7 +7,7 @@
     = term.body
   .col-md-4
     %p.related
-      %a{href: term.wikipedia_url}= term.wikipedia_label
+      %a.btn.btn-info{href: term.wikipedia_url}= term.wikipedia_label
     %ul.nav.nav-pills.nav-stacked
       - Glossary.terms.each do |t|
         %li
