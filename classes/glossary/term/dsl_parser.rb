@@ -21,6 +21,10 @@ module Glossary
       def subtitle value
         @term.subtitle = value
       end
+
+      def wikipedia_term value
+        @term.wikipedia_term = value
+      end
     end
   end
 end

@@ -46,10 +46,13 @@ page about HTTP.
   term 'HTTP Request' do
     subtitle 'How to ask nicely'
     body 'When a client want something they ask for it'
+    wikipedia_term 'Http_request#Request_message'
   end
 
   term 'HTTP Response' do
     subtitle 'Getting something back'
     body 'The counter part to an HTTP Request'
+    wikipedia_term 'Http_request#Response_message'
+
   end
 end
