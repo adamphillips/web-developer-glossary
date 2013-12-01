@@ -19,7 +19,20 @@ machine-friendly ip addresses.
     body '
 HTTP is the protocol that is used to control the flow of web sessions. It
 consists of two parts, the request and the response.
-      '
+
+The easiest way to understand HTTP is through an example. When you requested
+this page, you entered a web address or URL into your web browser. The browser
+translates this in an HTTP request based on the component parts of the url.
+
+For example, image we entered the url `http://en.wikipedia.org/wiki/HTTP`. The
+browser interprets this as follows:
+
+| http://          | This means that we want the browser to make an HTTP request.
+| en.wikipedia.org | The domain name of the server to send the request to.
+
+*[HTTP]: HyperText Transfer Protocol
+*[URL]: Uniform Resource Locater
+'
   end
 
   term 'HTTP Request' do
