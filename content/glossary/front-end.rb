@@ -37,8 +37,9 @@ body {
 ~~~
 
 This says that for everything inside the body tag (which is basically
-everything visible). Now say that we want to make the heading red. We can add
-more styles for the *h1* tag.
+everything visible) the background color should be black and the foreground
+colour should be white. Now say that we want to make the heading red. We can
+add more styles for the *h1* tag.
 
 ~~~ css
 body {
