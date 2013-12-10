@@ -1,10 +1,14 @@
 module Glossary
   class Term
-    attr_accessor :term, :subtitle, :body
+    attr_accessor :term, :subtitle, :body, :links
     attr_writer :wikipedia_term
 
     def initialize term
       @term = term
+    end
+
+    def links
+      @links ||= []
     end
 
     def wikipedia_label

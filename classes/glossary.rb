@@ -1,4 +1,5 @@
 require 'glossary/dsl'
+require 'glossary/link'
 require 'glossary/term'
 
 module Glossary

@@ -19,4 +19,20 @@ describe Glossary::Term::DSLParser do
 
     @term.body.should == "<h1 id=\"a-term\">A term</h1>\n"
   end
+
+  it 'should be possible to add related links' do
+    Glossary::Term::DSLParser.new @term do
+      link 'http://www.agreatarticle.com',
+            'Some article',
+            'It is really good'
+      link 'http://www.alamearticle.com',
+            'It is a bit lame',
+            'Another article'
+    end
+
+    @term.links.length.should == 2
+    @term.links.first.title.should == 'Some article'
+    @term.links.first.description.should == 'It is really good'
+    @term.links.first.url.should == 'http://www.agreatarticle.com'
+  end
 end

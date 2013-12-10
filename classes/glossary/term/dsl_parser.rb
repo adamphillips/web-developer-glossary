@@ -18,6 +18,10 @@ module Glossary
         @term.body = value
       end
 
+      def link url, title=nil, desc=nil
+        @term.links << Glossary::Link.new(url, title, desc)
+      end
+
       def subtitle value
         @term.subtitle = value
       end
