@@ -76,8 +76,8 @@ Vim is the only way to edit text.
     subtitle 'Version Control'
     body '
 Ever got half way through changing a website and realise that you have broken
-something by accident? So you try and remember what you changed but you're not
-sure which file it was or exactly what you did. Well that's what version
+something by accident? So you try and remember what you changed but you\'re not
+sure which file it was or exactly what you did. Well that\'s what version
 control is for.
 
 Version Control Software (VCS) tracks the changes made to files in a project.
