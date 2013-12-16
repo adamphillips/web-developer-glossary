@@ -9,6 +9,7 @@ module Glossary
         instance_exec &block
       end
 
+      # The body of the page for the term.
       def body value
         value = Kramdown::Document.new(value,
           enable_coderay: true,
@@ -18,14 +19,18 @@ module Glossary
         @term.body = value
       end
 
+      # Adds a link for the current term.
       def link url, title=nil, desc=nil
         @term.links << Glossary::Link.new(url, title, desc)
       end
 
+      # Subtitle for the term.
       def subtitle value
         @term.subtitle = value
       end
 
+      # Wikipedia definition for the term. Useful for terms that need
+      # disambiguation.
       def wikipedia_term value
         @term.wikipedia_term = value
       end
