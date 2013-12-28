@@ -15,7 +15,8 @@
     .col-md-9
       = term.body
     .col-md-3
-      %ul.nav.nav-pills.nav-stacked
+      %ul.side-term-list
         - Glossary.terms.each do |t|
+          - selected = (t[0] == term.term)
           %li
-            %a{href: "/glossary/terms/#{t[0]}"}= t[0]
+            %a{href: "/glossary/terms/#{t[0]}", class: (selected)? 'selected' : ''}= t[0]
