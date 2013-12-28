@@ -36,6 +36,19 @@ These include:
 - [Semaphore](https://semaphoreapp.com/)
 - [Snap](https://snap-ci.com/)
 
+## An example
+
+This site uses Travis for continuous integration and the reports are available
+at
+[https://travis-ci.org/adamphillips/web-developer-glossary](https://travis-ci.org/adamphillips/web-developer-glossary).
+The initial screen shows the output from the most recent test run or *build*.
+
+![Travis build report](/images/ci/travis-home.png)
+
+If there is an error running the tests, this will be shown in the build report.
+
+![Failing Travis build report](/images/ci/travis-fail.png)
+
 ## Continuous Deployment
 
 Continuous Deployment takes the idea to the next level by automatically
