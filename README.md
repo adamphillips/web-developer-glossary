@@ -15,6 +15,7 @@ This is available online at
 All of the glossary content is stored in the repository so to contribute
 content, simply send a pull request with your changes.
 
-Content is stored in `content/glossary`. Terms are defined using a simple DSL.
-The best place to look for reference on the DSL is
+Content is stored as markdown files in `content/glossary`. Terms are defined in
+[content/definitions.rb](https://github.com/adamphillips/web-developer-glossary/blob/master/content/definitions.rb)
+using a simple DSL.  The best place to look for reference on the DSL is
 [classes/glossary/term/dsl_parser.rb](https://github.com/adamphillips/web-developer-glossary/blob/master/classes/glossary/term/dsl_parser.rb).
