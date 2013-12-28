@@ -35,4 +35,12 @@ describe Glossary::Term::DSLParser do
     @term.links.first.description.should == 'It is really good'
     @term.links.first.url.should == 'http://www.agreatarticle.com'
   end
+
+  it 'should be possible to load a file into the body' do
+    Glossary::Term::DSLParser.new @term do
+      file 'mvc'
+    end
+
+    @term.body.should =~ /MVC/
+  end
 end

@@ -19,6 +19,12 @@ module Glossary
         @term.body = value
       end
 
+      # File to load. Assumes the file lives in content/glossary and has the
+      # .md suffix
+      def file filename
+        body IO.read "./content/glossary/#{filename}.md"
+      end
+
       # Adds a link for the current term.
       def link url, title=nil, desc=nil
         @term.links << Glossary::Link.new(url, title, desc)
