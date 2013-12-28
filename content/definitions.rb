@@ -1,4 +1,10 @@
 Glossary.define do
+  term 'Continuous Integration' do
+    subtitle 'CI got your back'
+    file 'ci'
+    link 'http://www.thoughtworks.com/continuous-integration', 'Thoughtworks', 'A useful summary page'
+  end
+
   term 'CSS' do
     subtitle 'Add style to the web'
     file 'css'
@@ -28,5 +34,10 @@ Glossary.define do
   term 'MVC' do
     subtitle 'Model View Controller'
     file 'mvc'
+  end
+
+  term 'Version Control' do
+    subtitle 'Tracking changes and updates'
+    file 'version-control'
   end
 end
