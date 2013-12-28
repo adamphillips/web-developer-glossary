@@ -145,7 +145,7 @@ Finally we can copy our original copy into the body section of the document.
 
 And there we have it - a very simple HTML page. In order to expand on this, we
 can add more styling information using [CSS](/glossary/terms/CSS) and
-interactivity using [JavaScript](/glossary/terms/JavaScript).
+interactivity using JavaScript.
 
 *[HTML]: Hypertext Markup Language
 
