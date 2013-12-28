@@ -1,6 +1,12 @@
 require 'spec_helper'
 
 describe Glossary do
+  describe 'a failing example' do
+    it 'should always fail' do
+      true.should == false
+    end
+  end
+
   describe '#clear' do
     it 'should remove all terms from the Glossary' do
       Glossary.define do
