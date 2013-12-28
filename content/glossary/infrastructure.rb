@@ -31,7 +31,7 @@ The easiest way to understand HTTP is through an example. When you requested
 this page, you entered a web address or URL into your web browser. The browser
 translates this in an HTTP request based on the component parts of the url.
 
-For example, image we entered the url `http://en.wikipedia.org/wiki/HTTP`. The
+For example, imagine we entered the url `http://en.wikipedia.org/wiki/HTTP`. The
 browser interprets this as follows:
 
 | http://          | This means that we want the browser to make an HTTP request.
