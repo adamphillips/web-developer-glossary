@@ -5,9 +5,9 @@
         %h1= term.term
         %p= term.subtitle
       .col-md-2
-        %a.wikipedia.btn.btn-info{href: term.wikipedia_url} Wikipedia
+        %a.wikipedia.btn.btn-info{href: term.wikipedia_url, rel: 'external'} Wikipedia
         - term.links.each do |link|
-          %a{class: 'btn btn-info', href: link.url}
+          %a{class: 'btn btn-info', href: link.url, rel: 'external'}
             = link.title
             %span= link.description unless link.description.nil?
 .content.container
