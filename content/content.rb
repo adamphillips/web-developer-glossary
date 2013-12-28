@@ -1,5 +1,4 @@
-require 'glossary/coding'
-require 'glossary/front-end'
+require 'definitions'
 require 'glossary/infrastructure'
 require 'glossary/languages'
 require 'glossary/tools'
